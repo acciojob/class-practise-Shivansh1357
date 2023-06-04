@@ -1,16 +1,22 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <style>
+    .selector {
+      color: #00f;
+      background-color: #eee;
+    }
+  </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+  <p>This is paragraph 1.</p>
+  <p>This is paragraph 2.</p>
+  <p>This is paragraph 3.</p>
+  
+  <script>
+    // Applying the "selector" class to paragraph 1 and paragraph 3
+    document.getElementsByTagName("p")[0].classList.add("selector");
+    document.getElementsByTagName("p")[2].classList.add("selector");
+  </script>
 </body>
-
 </html>
